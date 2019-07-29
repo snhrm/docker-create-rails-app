@@ -34,6 +34,7 @@ default: &default
 ```
 ### 初期設定
 ```
+docker-compose up db
 docker-compose run rails bin/setup
 ```
 
