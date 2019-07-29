@@ -1,5 +1,11 @@
 # dockerでrails環境構築
 
+ruby 2.6.3
+
+rails 5.2.3
+
+mysql 5.7
+
 [rubyのDockerfile作成](Dockerfile)
 
 ### Gemfileを作成
