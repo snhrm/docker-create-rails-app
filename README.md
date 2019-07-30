@@ -40,8 +40,8 @@ default: &default
 ```
 ### 初期設定
 ```
-docker-compose up db
-docker-compose run rails bin/setup
+docker-compose up -d db
+docker-compose run --rm rails bin/setup
 ```
 
 ### 起動
@@ -51,13 +51,13 @@ $ docker-compose up
 
 ### マイグレーション
 ```
-docker-compose run spring spring rake db:migrate
+docker-compose exec rails rake db:migrate
 ```
 
 ### console / rake
 ```
-docker-compose run spring spring rails console
+docker-compose exec rails rails console
 
-docker-compose run spring spring rake -T
+docker-compose exec rails rake -T
 ```
 
